@@ -43,10 +43,30 @@
 
 
 // custom cursor
-var main = document.querySelector("#main");
-var cursor = document.querySelector("#cursor");
+// var main = document.querySelector("#main");
+// var cursor = document.querySelector("#cursor");
 
-main.addEventListener("mousemove", function(details){
-    cursor.style.left = details.x+"px";
-    cursor.style.top = details.y+"px";
-});
+// main.addEventListener("mousemove", function(details){
+//     cursor.style.left = details.x+"px";
+//     cursor.style.top = details.y+"px";
+// });
+
+
+
+// multiple image hovering animation 
+// var elem = document.querySelectorAll("#elem");
+
+// elem.forEach(function(val){
+//     val.addEventListener("mouseenter", function(){
+//         val.childNodes[3].style.opacity = 1;
+//     })
+
+//     val.addEventListener("mouseleave", function(){
+//         val.childNodes[3].style.opacity = 0;
+//     })
+
+
+//     val.addEventListener("mousemove", function(details){
+//         val.childNodes[3].style.left = details.x+"px";
+//     })
+// })
