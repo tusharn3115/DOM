@@ -34,7 +34,7 @@ con.addEventListener("dblclick", function(){
 
     setTimeout(function(){
         like.style.opacity = 0;
-    },500);
+    },800);
     setTimeout(function(){
         like.style.transform = "translate(-50%, -50%) scale(0)";
     },1000);
