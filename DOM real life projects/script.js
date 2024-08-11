@@ -25,17 +25,28 @@
 
 
 // double tap like animation
-var con = document.querySelector("#container");
-var like = document.querySelector("i");
+// var con = document.querySelector("#container");
+// var like = document.querySelector("i");
 
-con.addEventListener("dblclick", function(){
-    like.style.transform = "translate(-50%, -50%) scale(1)";
-    like.style.opacity = 0.8;
+// con.addEventListener("dblclick", function(){
+//     like.style.transform = "translate(-50%, -50%) scale(1)";
+//     like.style.opacity = 0.8;
 
-    setTimeout(function(){
-        like.style.opacity = 0;
-    },800);
-    setTimeout(function(){
-        like.style.transform = "translate(-50%, -50%) scale(0)";
-    },1000);
-})
+//     setTimeout(function(){
+//         like.style.opacity = 0;
+//     },800);
+//     setTimeout(function(){
+//         like.style.transform = "translate(-50%, -50%) scale(0)";
+//     },1000);
+// })
+
+
+
+// custom cursor
+var main = document.querySelector("#main");
+var cursor = document.querySelector("#cursor");
+
+main.addEventListener("mousemove", function(details){
+    cursor.style.left = details.x+"px";
+    cursor.style.top = details.y+"px";
+});
